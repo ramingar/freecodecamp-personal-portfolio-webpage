@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Personal Portfolio Webpage</title>
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        ul.navbar-nav {
+            background-color: rgba(255, 255, 255, 1);
+            border-bottom: 1px solid rgba(200, 200, 200, 1);
+            padding: 15px;
+        }
+
+        .fixed-top {
+            height: 56px;
+        }
+
+        .rounded-element {
+            border: 1px solid rgba(0, 0, 0, 1);
+            border-radius: 50%;
+        }
+
+        .rounded-element-centered {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            font-size: 55px;
+            text-align: center;
+            padding-top: 0;
+        }
+
+        .clickable-element:hover {
+            transition: box-shadow .2s ease, transform .2s ease;
+            background-color: rgba(220, 220, 220, 1);
+            box-shadow: 0 0 8px rgba(140, 140, 140, 1);
+            border: 1px solid rgba(50, 50, 50, 1);
+            transform: scale(1.005);
+        }
+
+        .clickable-element {
+            text-decoration: none;
+            color: black;
+        }
+
+        .size-scalable {
+            font-size: 2rem;
+        }
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+        }
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+
+            ul.navbar-nav {
+                background-color: transparent;
+                border-bottom: 0;
+                padding: 0;
+            }
+
+            .size-scalable {
+                font-size: 3rem;
+            }
+
+            .rounded-element-centered {
+                width: 100px;
+                height: 100px;
+                padding-top: 9px;
+            }
+        }
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            ul.navbar-nav {
+                background-color: transparent;
+                border-bottom: 0;
+                padding: 0;
+            }
+
+            .size-scalable {
+                font-size: 3rem;
+            }
+
+            .rounded-element-centered {
+                width: 100px;
+                height: 100px;
+                padding-top: 9px;
+            }
+        }
+
+    </style>
+</head>
+<body data-spy="scroll" data-offset="56" data-target="#navbar-portfolio">
+
+<nav id="navbar-portfolio" class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Rafael Minguet García</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#social-links">Social Links <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid" id="social-links">
+    <br>
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-lg-9 my-4">
+                <h1 class="display-3">Rafael Minguet García</h1>
+                <p class="lead">
+                    Front-end Developer, teacher and self taught professional.
+                </p>
+                <div class="row mt-4">
+                    <div class="my-2 mx-2">
+                        <a class="rounded-element rounded-element-centered clickable-element size-scalable"
+                           href="https://github.com/ramingar">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="my-2 mx-2">
+                        <a class="rounded-element rounded-element-centered clickable-element size-scalable"
+                           href="https://twitter.com/ramingar">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="my-2 mx-2">
+                        <a class="rounded-element rounded-element-centered clickable-element size-scalable"
+                           href="https://www.freecodecamp.com/ramingar">
+                            <i class="fa fa-free-code-camp"></i>
+                        </a>
+                    </div>
+                    <div class="my-2 mx-2">
+                        <a class="rounded-element rounded-element-centered clickable-element size-scalable"
+                           href="https://es.linkedin.com/in/ramingar">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-4 hidden-md-down">
+                <img class="img-fluid rounded-circle"
+                     src="https://ca.gravatar.com/userimage/18753160/24c51627f0d8379efc9c23c73e757431.jpg?size=400"
+                     alt="my-photo">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" id="about-me">
+    <br>
+    <h1 class="display-4 text-center my-5">About me</h1>
+
+    <p>
+        Mainly Front-end developer, Early Childhood Teacher and Foreign Language Spanish Teacher or as a Second
+        Language.
+    </p>
+    <p>
+        I am a restless professional who likes to learn new things and work with the lastest technologies. Currently, my
+        profile is closer to Javascript and frameworks related to Javascript so you can see me writing code in plain
+        Javascript, Angular and Cordova. In my free time I like read about Angular2 and React, and nose around MobX and
+        Horizon.
+    </p>
+
+</div>
+
+<hr class="my-5 mx-5">
+
+<div class="container" id="portfolio">
+    <br>
+    <h1 class="display-4 text-center my-5">Portfolio</h1>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <a href="http://codepen.io/ramingar/full/PWaawM/">
+                <figure class="figure img-thumbnail mx-auto clickable-element" role="button">
+                    <img src="http://i.imgur.com/MJ4S6Up.png" class="figure-img img-fluid rounded"
+                         alt="Alphonse Mucha Tribute Webpage.">
+                    <figcaption class="figure-caption lead text-center my-1">Alphonse Mucha Tribute.</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <p class="mt-4">
+        <em>Alphonse Mucha Tribute</em> is a praise to the Czech Art Nouveau painter and decorative artist. It is
+        a single-page website where to find out about the Mucha's timeline and to discover about Mucha's life at a
+        glance.
+    </p>
+    <p class="mb-5">
+        Made using HTML, CSS and Bootstrap, this is a project part of the Basic Front-end Development projects needed to
+        achieve the FreeCodeCamp Front-End Development Certificate.
+    </p>
+</div>
+
+<div class="jumbotron jumbotron-fluid" id="contact">
+
+    <h1 class="display-4 text-center my-5">Contact with me</h1>
+
+    <div class="container">
+        <form action="mailto:rminguet@gmail.com" accept-charset="utf-8" enctype="text/plain" method="get">
+            <div class="form-group row">
+                <label for="email-subject" class="col-2 col-form-label">Subject</label>
+                <div class="col-10">
+                    <input id="email-subject" class="form-control" type="text" name="subject"
+                           placeholder="Write some subject...">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email-body" class="col-2 col-form-label">Message</label>
+                <div class="col-10">
+                    <textarea id="email-body" class="form-control" name="body" rows="10"
+                              placeholder="Write me something nice..."></textarea>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button id="send-email" class="btn btn-secondary mx-auto" type="submit">Send email</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<footer class="my-3">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                Coded by <a href="https://www.freecodecamp.com/ramingar">Rafael Minguet García</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $('document').ready(function () {
+        $('body').scrollspy({target: '#navbar-portfolio'});
+
+        // how to animate the scroll viewed in:
+        // http://stackoverflow.com/questions/8711333/bootstrap-js-scrollspy-with-animated-scroll/23908983#23908983
+        $(".navbar ul li a[href^='#']").on('click', function (e) {
+
+            // prevent default anchor click behavior
+            e.preventDefault();
+
+            // store hash
+            var hash = this.hash;
+
+            // animate
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000, function () {
+                window.location.hash = hash;
+            });
+
+        });
+
+        $('#navbarSupportedContent').on('click', 'li', function (e) {
+            $('#navbarSupportedContent').removeClass('show');
+        });
+    });
+</script>
+
+</body>
+</html>
